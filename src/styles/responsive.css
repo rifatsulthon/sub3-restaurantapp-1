@@ -1,0 +1,96 @@
+.explore__detail {
+    display: grid;
+    grid-row-gap: 16px;
+  }
+
+.explore__title a {
+    min-width: 44px;
+    min-height: 44px;
+  }
+  
+@media screen and (max-width: 499px) {
+  .nav {
+    z-index: 10;
+    background-color: #fff;
+    width: 300px;
+    position: absolute;
+  
+    /* This trasform moves the drawer off canvas. */
+    -webkit-transform: translate(-300px, 0);
+    transform: translate(-300px, 0);
+  
+    /* Optionally, we animate the drawer. */
+    transition: transform 0.3s ease;
+  }
+  
+  .open {
+    -webkit-transform: translate(0, 0);
+    transform: translate(0, 0);
+  }
+  
+  .nav__item {
+    display: list-item;
+    border-bottom: 1px solid #E0E0E0;
+    width: 100%;
+    text-align: left;
+  }
+
+  .hero {
+    align-items: center;
+    min-height: 380px;
+    width: 100%;
+    text-align: center;
+    background-position: center;
+  }
+    
+  .header__menu {
+    min-width: 44px;
+    min-height: 44px;
+  }
+}
+  
+  
+@media screen and (min-width: 500px) {
+  .header__menu {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 700px) {
+  .explore__detail {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 10px;
+    grid-row-gap: 16px;
+  }
+}
+  
+@media screen and (min-width: 900px) {
+  .explore__detail {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 12px;
+  }
+}
+  
+@media screen and (min-width: 1200px) {
+  main {
+    max-width: 1200px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .hero {
+    background: url('../public/images/heros/hero-image_1-small.jpg');
+    background-position: center;
+    background-size: cover;
+  }
+}
+
+@media screen and (min-width: 601px) and (max-width: 800px) {
+  .hero {
+    background: url('../public/images/heros/hero-image_1-large.jpg') fixed;
+    background-position: center;
+    background-size: auto;
+  }
+}

@@ -1,0 +1,285 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body, html {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 12px;
+  color: #424242;
+}
+
+/* HEADER */
+.skip-link {
+  position: absolute;
+  top: -40px;
+  left: 0;
+  background-color: #d9534f;
+  color: white;
+  padding: 8px;
+  z-index: 100;
+}
+
+.skip-link:focus{
+  top: 0;
+}
+
+.header {
+  min-height: 56px;
+  transition: min-height 0.3s;
+}
+
+.header__inner {
+  width: 100%;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.header__title {
+  font-weight: 300;
+  font-size: 4em;
+  margin: 0.5em 0.25em;
+  display: inline-block;
+  color: #212121;
+}
+
+.header__menu {
+  font-size: 32px;
+  margin: 10px auto;
+  display: block;
+  width: 30px;
+}
+
+/* NAV */
+
+.nav {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.nav__list {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+.nav__item {
+  box-sizing: border-box;
+  display: inline-block;
+  width: 24%;
+  text-align: center;
+  line-height: 24px;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.nav a {
+  display: inline-block;
+  padding: 1.3em;
+  text-decoration: none;
+  color: #616161;
+}
+
+.nav a:hover {
+  text-decoration: underline;
+  color: #000;
+}
+
+/* JUMBOTRON */
+
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 380px;
+  width: 100%;
+  text-align: center;
+  background-image: url('../public/images/heros/hero-image_1.jpg');
+  background-position: center;
+}
+
+.hero__title {
+  color: black;
+  font-weight: 500;
+  font-size: 36px;
+}
+
+/* MAIN */
+
+main {
+  width : 100%;
+  margin: 0 auto;
+}
+
+/* CONTENT */
+
+.content {
+  padding: 32px;
+}
+
+/* Explore Label */
+.explore {
+  width: 100%;
+  margin: 60px auto;
+  text-align: center;
+}
+
+.explore__label {
+  font-size: 32px;
+  font-weight: lighter;
+}
+
+.explore__label::after {
+  content: '';
+  margin-top: 16px;
+  display: block;
+  border-bottom: 1px solid #eeeeee;
+}
+
+/* Restaurant */
+.explore__detail {
+  margin: 32px auto auto;
+  text-align: left;
+}
+
+/* Restaurant Item */
+.explore__item {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  width: 100%;
+  border-radius: 5px;
+  overflow: hidden;
+  background-color: #9BA17B;
+  color: black;
+}
+
+.explore__rating {
+  margin-left: 32px;
+}
+
+.explore____content {
+  padding: 16px 32px 32px 32px;
+}
+
+.explore__image {
+  width: 100%;
+  height: 250px;
+}
+
+.explore__title {
+  font-size: 24px;
+  margin-top: 16px;
+  transition: 0.3s opacity;
+  padding-left: 32px;
+}
+
+.explore__title a {
+  text-decoration: none;
+  color: #263159;
+  padding: 10px 0;
+}
+
+.explore__title:hover {
+  opacity: 0.5;
+  text-decoration: dashed;
+}
+
+.explore__city {
+  font-size: 16px;
+}
+
+.explore__description {
+  margin-top: 16px;
+  font-size: 14px;
+  line-height: 1.5em;
+}
+
+/* RESTAURANT DETAIL */
+.detail {
+  margin: 50px auto;
+  padding: 20px;
+  background-color: #FFDCA9;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.explore-detail__poster {
+  width: 100%;
+  object-fit: cover;
+  height: 450px;
+  display: block;
+  margin: 10px auto;
+}
+
+.explore-detail__title {
+  font-size: 36px;
+  text-align: center;
+}
+
+.explore-detail__info {
+  padding: 20px;
+}
+
+.explore-detail__info h3 {
+  font-size: 24px;
+}
+
+.explore-detail__info h4 {
+  font-size: 20px;
+  margin: 10px 0;
+}
+
+.explore-detail__info p {
+  font-size: 18px;
+  color: black;
+}
+
+
+/* LIKE */
+.like {
+  width: 55px;
+  height: 55px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #db0000;
+  
+  position: fixed;
+  bottom: 16px;
+  right: 16px;
+  border-radius: 50%;
+  border: 0;
+  
+  font-size: 18px;
+  color: white;
+  cursor: pointer;
+}
+
+
+/* FOOTER */
+footer {
+  background-color: #424242;
+  padding: 2em;
+  width: 100%;
+  text-align: center;
+}
+
+footer ul {
+  margin: 0 auto;
+}
+
+footer p {
+  display: inline-block;
+  color: #fff;
+  margin: 0 1em;
+  font-size: 14px;
+}
