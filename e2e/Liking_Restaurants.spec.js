@@ -60,8 +60,7 @@ Scenario(' unlike restaurant', async ({ I }) => {
   I.click('#likeButton');
 
   I.amOnPage('/#/favorite');
-  I.seeElement('.explore__item');
-  const unlikedRestaurant = await I.grabTextFrom('.explore__item');
-
+  I.seeElement('.restaurant-item__not-found');
+  const unlikedRestaurant = await I.grabTextFrom('.restaurant-item__not-found');
   assert.strictEqual(unlikedRestaurant, 'Tidak ada restaurant untuk ditampilkan');
 });
